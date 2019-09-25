@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>ATG.World | vikram</title>
+  <!-- link for font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+  <link rel="stylesheet" href="    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 mt-sm-4 ml-sm-4 mt-md-3 mt-lg-2">
+        <img src="./image/logo-in.png" class="img-fluid" alt="logo">
+      </div>
+      <!-- logo of the compaany ends here -->
+      <div class="col-sm-5 mt-4">
+        <div class="input-group w-75 ml-auto mr-auto">
+          <input class="form-control border-right-0 bg-light" type="search" placeholder="Search..."
+            id="example-search-input">
+          <span class="input-group-append">
+            <button class="btn btn-outline-secondary border bg-light border-left-0" type="button">
+              <i class="fa fa-search"></i>
+            </button>
+          </span>
+        </div>
+      </div>
+      <!-- search bar ends here -->
+      <div class="col-sm-3 mt-3 mt-lg-4 text-center d-none d-sm-inline">
+        <p>Create Account <a href="#">It's Free!</a>&nbsp;<i class="fa fa-caret-down"></i></p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid p-0">
+    <div class="image row mt-1">
+      <div class="col-sm-12 d-flex align-items-end image-shadow">
+        <p class="text-white pl-4">
+          <span class="h1">Computer Engineering</span><br>
+          <span class="h6">123,455 Compute Engineers follow this</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- banner portion ends here -->
+
+  <!-- selection option stARTs here -->
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-center">
+      <div class="col-sm-10">
+        <div class="row d-flex d-lg-none mt-3 d-xl-none d-md-none d-sm-none d-xs-block">
+
+          <!-- this will shows no of posts -->
+          <div class="col-6">
+            <p class="font-weight-bold">Posts(<span id="total-post"></span>)</p>
+          </div>
+          <div class="col-6">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text" id="btnGroupAddon">Filter:-</div>
+              </div>
+
+              <!-- this is used to select the options -->
+              <select name="posttype" class="form-control bg-light" id="post-type-filter">
+                <option value="all">All</option>
+                <option value="article">Articles</option>
+                <option value="education">Education</option>
+                <option value="event">Event</option>
+                <option value="jobs">Jobs</option>
+              </select>
+              <!-- selection option ends -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-sm-7 p-4 d-xl-block d-lg-block d-md-block d-sm-block d-none" id="navigation-bar">
+        <a href="#" class="p-2 text-dark">All Posts</a>
+        <a href="#" class="p-2 text-dark">Article</a>
+        <a href="#" class="p-2 text-dark">Education</a>
+        <a href="#" class="p-2 text-dark">Event</a>
+        <a href="#" class="p-2 text-dark">Jobs</a>
+      </div>
+      <div class="col-sm-5 d-flex align-items-center mt-2 justify-content-around">
+        <button class="btn btn-secondary"> Write A post <i class="fa fa-caret-down"></i></button>
+        <button class="btn btn-primary ml-2"><i class="fa fa-user"></i> Join Group</button>
+      </div>
+    </div>
+  </div>
+  <!-- card 1 section starts from here -->
+  <div class="row mt-2 mb-2 post-section d-flex justify-content-center">
+    <div class="col-sm-10">
+      <div class="row d-flex justify-content-center">
+        <div class="col-11 col-lg-8 col-md-11 col-sm-11 posts">
+          <div class="row">
+            <div class="col-sm-12 posts-section">
+              <div class="card article-posts post-card">
+                <div class="card-body image-size-1">
+
+                </div>
+                <div class="card-footer bg-white">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <p><i class="fa fa-blog text-info"></i>&nbsp; Article</p>
+                    </div>
+                    <div class="row mb-4">
+                      <div class="col-10 text-left d-flex align-items-center">
+                        <p class="h6">
+                          what if famous brands had regular fonts?&nbsp; Meet regular brands
+                        </p>
+                      </div>
+                      <div class="col-2">
+                        <button class="btn bg-light" onclick="dropdown(this)" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-h"></i></button>
+                        <div class="position-absolute shadow p-3 border-rounded edit-menu bg-light" id="myDropdown">
+                          <a href="#" class="d-block p-2 text-dark">Edit</a>
+                          <a href="#" class="d-block p-2 text-dark">Report</a>
+                          <a href="#" class="d-block p-2 text-dark">Save</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <p class="text-secondary">
+                        <span id="post-text">i have worked in ux for the better part of decade.from now on ,i pplan to
+                          restart</span>
+                        <span onclick="showHidden(this)" class="text-info">More</span>
+                        <span id="post-text-hidden" style="display: none;">Lorem ipsum, dolor sit amet consectetur
+                          adipisicing elit. Harum unde modi quod optio commodi neque. <span class="text-info"
+                            onclick="hideHidden(this)">Less</span></span>
+                      </p>
+                    </div>
+                    <div class="row">
+                      <div class="col-10 p-0 w-100 d-flex align-items-center">
+                        <div class="profile-pic mt-4">
+                          <img src="./image/kelly.jpg" class="rounded-circle img-fluid float-left" alt="image">
+                        </div>
+                        <div class="position-relative">
+                          <p class="position-relative" style="top:18px; left:12px;">
+                            <span>Cindy Izabel</span>
+                            <span class="text-secondary d-block"><i class="fa fa-eye"></i>1,232</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-2 d-flex justify-content-center align-items-center">
+                        <button class="btn btn-info mr-4 mt-3" onclick="showIcon(this)"><i class="fa fa-share-alt"><span
+                              class="d-inline d-sm-none ml-2">Share</span></i></button>
+                      </div>
+                      <div class="bg-light text-dark p-1 position-absolute dropdown-share" id="iconShow">
+                        <p>
+                          <i class="fab fa-facebook-f mr-3"></i>
+                          <i class="fab fa-twitter mr-3"></i>
+                          <i class="fab fa-instagram mr-3"></i>
+                          <i class="fab fa-whatsapp "></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 d-none d-lg-block d-sm-none d-md-none">
+          <div class="container-fluid border-bottom mt-4">
+            <i class="fa fa-map-marker text-success"></i><input type="text" id="location" class="border-0 ml-2" placeholder="Alwar,India"><i class="float-right fa fa-pen text-danger"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- A card 1 post ends here -->
+
+  <!-- card 2 section starts from here -->
+  <div class="row mt-2 mb-2 post-section d-flex justify-content-center">
+    <div class="col-sm-10">
+      <div class="row d-flex justify-content-center">
+        <div class="col-11 col-lg-8 col-md-11 col-sm-11 posts">
+          <div class="row">
+            <div class="col-sm-12 posts-section">
+              <div class="card article-posts post-card">
+                <div class="card-body image-size-2">
+
+                </div>
+                <div class="card-footer bg-white">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <p><i class="fa fa-school text-info"></i>&nbsp; Education</p>
+                    </div>
+                    <div class="row mb-4">
+                      <div class="col-10 text-left d-flex align-items-center">
+                        <p class="h6">
+                          Tax benifits for investment under National pension scheme launched by Goverment
+                        </p>
+                      </div>
+                      <div class="col-2">
+                        <button class="btn bg-light" onclick="dropdown2(this)" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-h"></i></button>
+                        <div class="position-absolute shadow p-3 border-rounded edit-menu bg-light" id="myDropdown2">
+                          <a href="#" class="d-block p-2 text-dark">Edit</a>
+                          <a href="#" class="d-block p-2 text-dark">Report</a>
+                          <a href="#" class="d-block p-2 text-dark">Save</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <p class="text-secondary">
+                        <span id="post-text">i have worked in ux for the better part of decade.from now on ,i pplan to
+                          restart</span>
+                        <span onclick="showHidden2(this)" class="text-info">More</span>
+                        <span id="post-text-hidden-2" style="display: none;">Lorem ipsum, dolor sit amet consectetur
+                          adipisicing elit. Harum unde modi quod optio commodi neque. <span class="text-info"
+                            onclick="hideHidden2(this)">Less</span></span>
+                      </p>
+                    </div>
+                    <div class="row">
+                      <div class="col-10 p-0 w-100 d-flex align-items-center">
+                        <div class="profile-pic mt-4">
+                          <img src="./image/img-1.jpg" class="rounded-circle img-fluid float-left" alt="image">
+                        </div>
+                        <div class="position-relative">
+                          <p class="position-relative" style="top:18px; left:12px;">
+                            <span>Michel doe</span>
+                            <span class="text-secondary d-block"><i class="fa fa-eye"></i>1,726</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-2 d-flex justify-content-center align-items-center">
+                        <button class="btn btn-info mr-4 mt-3" onclick="showIcon2(this)"><i
+                            class="fa fa-share-alt"><span class="d-inline d-sm-none ml-2">Share</span></i></button>
+                      </div>
+                      <div class="bg-light text-dark position-absolute dropdown-share mt-3" id="iconShow2">
+                        <p>
+                          <i class="fab fa-facebook-f mr-3"></i>
+                          <i class="fab fa-twitter mr-3"></i>
+                          <i class="fab fa-instagram mr-3"></i>
+                          <i class="fab fa-whatsapp "></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- post sections ends here -->
+        <div class="col-sm-4 mt-4 location d-none d-lg-block d-sm-none d-md-none" id="current-location"></div>
+        <!-- location section ends here -->
+      </div>
+    </div>
+  </div>
+  <!-- A card 2 post ends here -->
+
+
+  <!-- card 3 section starts from here -->
+  <div class="row mt-2 mb-2 post-section d-flex justify-content-center">
+    <div class="col-sm-10">
+      <div class="row d-flex justify-content-center">
+        <div class="col-11 col-lg-8 col-md-11 col-sm-11 posts">
+          <div class="row">
+            <div class="col-sm-12 posts-section">
+              <div class="card article-posts post-card">
+                <div class="card-body image-size-3">
+
+                </div>
+                <div class="card-footer bg-white">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <p><i class="fa fa-handshake text-info"></i>&nbsp; Meetup</p>
+                    </div>
+                    <div class="row mb-4">
+                      <div class="col-10 text-left d-flex align-items-center">
+                        <p class="h6">
+                          Finance & Investment Elite Social Mixer @luijiazi
+                        </p>
+                      </div>
+                      <div class="col-2">
+                        <button class="btn bg-light" onclick="dropdown3(this)" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-h"></i></button>
+                        <div class="position-absolute shadow p-3 border-rounded edit-menu bg-light" id="myDropdown3">
+                          <a href="#" class="d-block p-2 text-dark">Edit</a>
+                          <a href="#" class="d-block p-2 text-dark">Report</a>
+                          <a href="#" class="d-block p-2 text-dark">Save</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="row">
+                      <p class="text-secondary">
+                        <span id="post-text">i have worked in ux for the better part of decade.from now on ,i pplan to
+                          restart</span>
+                        <span onclick="showHidden(this)" id="more" class="text-info">More</span>
+                        <span id="post-text-hidden" style="display: none;">Lorem ipsum, dolor sit amet consectetur
+                          adipisicing elit. Harum unde modi quod optio commodi neque.</span>
+                      </p>
+                    </div> -->
+                    <div class="row">
+                      <div class="col-6 p-0 d-flex justify-content-center">
+                        <p class="date-location"><i class="fa fa-calendar text-warning mr-2"></i>Fri,
+                          12 Oct,2018</p>
+                      </div>
+                      <div class="col-6 p-0 d-flex justify-content-center">
+                        <p class="date-location"><i class="fa fa-map-marker text-dark mr-1"></i> Ahemdabad,India
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <button class="btn btn-outline-danger btn-block mt-2 mb-2">
+                        Visit Site
+                      </button>
+                    </div>
+                    <div class="row">
+                      <div class="col-10 p-0 w-100 d-flex align-items-center">
+                        <div class="profile-pic mt-4">
+                          <img src="./image/img-2.jpg" class="rounded-circle img-fluid float-left" alt="image">
+                        </div>
+                        <div class="position-relative">
+                          <p class="position-relative" style="top:18px; left:12px;">
+                            <span>Luicifer</span>
+                            <span class="text-secondary d-block"><i class="fa fa-eye"></i>1,232</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-2 d-flex justify-content-center align-items-center" onclick="showIcon3(this)">
+                        <button class="btn btn-info mr-4 mt-3"><i class="fa fa-share-alt"><span
+                              class="d-inline d-sm-none ml-2">Share</span></i></button>
+                      </div>
+                      <div class="bg-light text-dark p-1 position-absolute dropdown-share mt-4" id="iconShow3">
+                        <p>
+                          <i class="fab fa-facebook-f mr-3"></i>
+                          <i class="fab fa-twitter mr-3"></i>
+                          <i class="fab fa-instagram mr-3"></i>
+                          <i class="fab fa-whatsapp "></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- post sections ends here -->
+        <div class="col-sm-4 mt-4 location d-none d-lg-block d-sm-none d-md-none" id="current-location"></div>
+        <!-- location section ends here -->
+      </div>
+    </div>
+  </div>
+  <!-- A card 3 post ends here -->
+
+
+  <!-- card 4 section starts from here -->
+  <div class="row mt-2 mb-2 post-section d-flex justify-content-center">
+    <div class="col-sm-10">
+      <div class="row d-flex justify-content-center">
+        <div class="col-11 col-lg-8 col-md-11 col-sm-11 posts">
+          <div class="row">
+            <div class="col-sm-12 posts-section">
+              <div class="card article-posts post-card">
+                <div class="card-body">
+
+                </div>
+                <div class="card-footer bg-white">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <p><i class="fa fa-briefcase text-info"></i>&nbsp; JOB</p>
+                    </div>
+                    <div class="row mb-4">
+                      <div class="col-10 text-left d-flex align-items-center">
+                        <p class="h6">
+                          SOFTWARE DEVELOPER -II
+                        </p>
+                      </div>
+                      <div class="col-2">
+                        <button class="btn bg-light" onclick="dropdown4(this)" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-h"></i></button>
+                        <div class="position-absolute shadow p-3 border-rounded edit-menu bg-light" id="myDropdown4">
+                          <a href="#" class="d-block p-2 text-dark">Edit</a>
+                          <a href="#" class="d-block p-2 text-dark">Report</a>
+                          <a href="#" class="d-block p-2 text-dark">Save</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="row">
+                      <p class="text-secondary">
+                        <span id="post-text">i have worked in ux for the better part of decade.from now on ,i pplan to
+                          restart</span>
+                        <span onclick="showHidden(this)" id="more" class="text-info">More</span>
+                        <span id="post-text-hidden" style="display: none;">Lorem ipsum, dolor sit amet consectetur
+                          adipisicing elit. Harum unde modi quod optio commodi neque.</span>
+                      </p>
+                    </div> -->
+                    <div class="row">
+                      <div class="col-6 p-0 d-flex justify-content-center">
+                        <p class="date-location"><i class="fa fa-calendar text-warning mr-2"></i>Sat,12
+                          Nov,2018</p>
+                      </div>
+                      <div class="col-6 p-0 d-flex justify-content-center">
+                        <p class="date-location"><i class="fa fa-map-marker text-dark mr-1"></i> Noida,India
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <button class="btn btn-outline-success btn-block mt-2 mb-2">Apply On Times
+                        Jobs</button>
+                    </div>
+                    <div class="row">
+                      <div class="col-10 p-0 w-100 d-flex align-items-center">
+                        <div class="profile-pic mt-4">
+                          <img src="./image/img-3.jpg" class="rounded-circle img-fluid float-left" alt="image">
+                        </div>
+                        <div class="position-relative">
+                          <p class="position-relative" style="top:18px; left:12px;">
+                            <span>jose hug</span>
+                            <span class="text-secondary d-block"><i class="fa fa-eye"></i>1,933</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-2 d-flex justify-content-center align-items-center" onclick="showIcon4(this)">
+                        <button class="btn btn-info mr-4 mt-3"><i class="fa fa-share-alt"><span
+                              class="d-inline d-sm-none ml-2">Share</span></i></button>
+                      </div>
+                      <div class="bg-light text-dark p-1 position-absolute dropdown-share4" id="iconShow4">
+                        <p>
+                          <i class="fab fa-facebook-f mr-3"></i>
+                          <i class="fab fa-twitter mr-3"></i>
+                          <i class="fab fa-instagram mr-3"></i>
+                          <i class="fab fa-whatsapp "></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- post sections ends here -->
+        <div class="col-sm-4 mt-4 location d-none d-lg-block d-sm-none d-md-none" id="current-location"></div>
+        <!-- location section ends here -->
+      </div>
+    </div>
+  </div>
+  <!-- A card 4 post ends here -->
+
+</body>
+
+</html>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>

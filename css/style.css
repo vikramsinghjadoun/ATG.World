@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding:0;
+}
+body i{
+    cursor: pointer;
+}
+.image{
+    background-image:url("../image/2.jpg");
+    height:350px;
+    background-size:cover;
+    background-repeat:no-repeat;   
+}
+.image-shadow{
+    background-color:rgba(0, 0, 0, 0.6);
+}
+.image-size-1 , .image-size-2, .image-size-3{
+    height:170px;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+.image-size-1{
+    background-image:url("../image/image-1.jpg")
+}
+.image-size-2{
+    background-image:url("../image/image-2.jpg")
+}
+.image-size-3{
+    background-image:url("../image/image-3.jpg")
+}
+.profile-pic{
+    width:40px;
+}
+/* style for share botton */
+.dropdown-share{
+    width:135px;
+    height:32px;
+    right:10px;
+    top:340px;
+    z-index:3;
+    box-shadow:4px 4px 4px grey;
+    display:none;
+}
+.dropdown-share4{
+    width:135px;
+    height:32px;
+    right:10px;
+    top:230px;
+    z-index:3;
+    box-shadow:4px 4px 4px grey;
+    display:none;
+}
+.edit-menu{
+    right:-15px;
+    box-shadow: 4px 4px 10px grey;
+    z-index: 2;
+    display:none;
+}
+
